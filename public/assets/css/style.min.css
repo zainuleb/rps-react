@@ -297,6 +297,10 @@ body ul {
   transition: 0.8s;
 }
 
+.noDisplay {
+  display: none;
+}
+
 .account-form .form-group .checkgroup,
 .shop-cart .section-wrapper .cart-bottom .shiping-box .cart-overview ul li,
 .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .cart-checkout,

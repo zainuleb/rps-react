@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -7,31 +8,30 @@ const Header = () => {
         <div className="header-holder d-flex flex-wrap justify-content-between align-items-center">
           <div className="brand-logo d-none d-lg-inline-block">
             <div className="logo logo-header">
-              <a href="index.html">
+              <Link to="/" className="active">
                 <img src="assets/images/logo/logo.png" alt="logo" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="header-menu-part">
             <div className="header-bottom">
               <div className="header-wrapper justify-content-lg-end">
                 <div className="mobile-logo d-lg-none">
-                  <a href="index.html">
+                  <Link to="/" className="active">
                     <img src="assets/images/logo/logo.png" alt="logo" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="menu-area">
                   <ul className="menu">
                     <li>
-                      <a href="index.html" className="active">
+                      <Link to="/" className="active">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#0">Blog</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
+                      <Link to="/" className="active">
+                        About
+                      </Link>
                     </li>
                   </ul>
 

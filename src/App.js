@@ -10,6 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Menu />} />
+
         <Route path="*" element={<PNF />} />
       </Routes>
 

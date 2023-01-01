@@ -16,7 +16,7 @@ const Footer = () => {
                     />
                   </div>
                   <div class="lab-content">
-                    <span>Phone Number : +88019 339 702 520</span>
+                    <span>Phone Number : +9290078601</span>
                   </div>
                 </div>
               </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                     />
                   </div>
                   <div class="lab-content">
-                    <span>Email : youremail@gmail.com</span>
+                    <span>Email : rockpaperscissor@gmail.com</span>
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                     />
                   </div>
                   <div class="lab-content">
-                    <span>Address : 30 North West New York 240</span>
+                    <span>Address : Frankfurt Oder</span>
                   </div>
                 </div>
               </div>
@@ -67,134 +67,12 @@ const Footer = () => {
                     <img src="assets/images/logo/logo.png" alt="logo" />
                   </div>
                   <div class="fm-item-content">
-                    <p class="mb-4">
-                      Upropriate brand economca sound technolog after covalent
-                      technology enable prospective wastng markets whereas
-                      propriate and brand economca sound technolog
-                    </p>
-                    <ul class="match-social-list d-flex flex-wrap align-items-center">
-                      <li>
-                        <a href="#">
-                          <img
-                            src="assets/images/match/social-1.png"
-                            alt="vimeo"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img
-                            src="assets/images/match/social-2.png"
-                            alt="youtube"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img
-                            src="assets/images/match/social-3.png"
-                            alt="twitch"
-                          />
-                        </a>
-                      </li>
-                    </ul>
+                    <p class="mb-4">--- Content to Write ---</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="footer-middle-item-wrapper">
-                <div class="footer-middle-item mb-lg-0">
-                  <div class="fm-item-title">
-                    <h4>Top jackpot games</h4>
-                  </div>
-                  <div class="fm-item-content">
-                    <div class="fm-item-widget lab-item">
-                      <div class="lab-inner">
-                        <div class="lab-thumb">
-                          <a href="#">
-                            {' '}
-                            <img
-                              src="assets/images/footer/01.jpg"
-                              alt="footer-widget-img"
-                            />
-                          </a>
-                        </div>
-                        <div class="lab-content">
-                          <h6>
-                            <a href="blog-single.html">free Poker Game</a>
-                          </h6>
-                          <p>
-                            Poker: <b>$230</b>
-                          </p>
-                          <div class="rating">
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-item-widget lab-item">
-                      <div class="lab-inner">
-                        <div class="lab-thumb">
-                          <a href="#">
-                            <img
-                              src="assets/images/footer/02.jpg"
-                              alt="footer-widget-img"
-                            />
-                          </a>
-                        </div>
-                        <div class="lab-content">
-                          <h6>
-                            <a href="blog-single.html">CLUB Poker Game</a>
-                          </h6>
-                          <p>
-                            Poker: <b>$290</b>
-                          </p>
-                          <div class="rating">
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fm-item-widget lab-item">
-                      <div class="lab-inner">
-                        <div class="lab-thumb">
-                          <a href="#">
-                            <img
-                              src="assets/images/footer/03.jpg"
-                              alt="footer-widget-img"
-                            />
-                          </a>
-                        </div>
-                        <div class="lab-content">
-                          <h6>
-                            <a href="blog-single.html">ROYAL Poker Game</a>
-                          </h6>
-                          <p>
-                            Poker: <b>$330</b>
-                          </p>
-                          <div class="rating">
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                            <i class="icofont-ui-rating"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="col-lg-4 col-md-6 col-12"></div>
             <div class="col-lg-4 col-md-6 col-12">
               <div class="footer-middle-item-wrapper">
                 <div class="footer-middle-item-3 mb-lg-0">
@@ -202,10 +80,6 @@ const Footer = () => {
                     <h4>Our Newsletter</h4>
                   </div>
                   <div class="fm-item-content">
-                    <p>
-                      Bigamer esports organization supported by community
-                      leaders
-                    </p>
                     <form>
                       <div class="form-group mb-4">
                         <input
@@ -240,8 +114,7 @@ const Footer = () => {
             <div class="col-12">
               <div class="footer-bottom-content text-center">
                 <p>
-                  &copy;2021 <a href="index.html">BiGamer</a> - eSpost And
-                  Gameing HTML Template.
+                  &copy;2023 <a href="/#">RPS</a>
                 </p>
               </div>
             </div>

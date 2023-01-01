@@ -1,5 +1,6 @@
 import React from 'react';
 
+// eslint-disable-next-line
 const gameOptions = [
   {
     type: 'rock',
@@ -39,7 +40,6 @@ const SingleGame = () => {
 
       <div>
         <div>
-          <h4 class="noDisplay chosenOptionEmoji"></h4>
           <h3>Computer</h3>
           <h2 id="computerScore">0</h2>
         </div>
@@ -47,7 +47,6 @@ const SingleGame = () => {
         <div>
           <h2 id="userScore">0</h2>
           <h3>You</h3>
-          <h4 class="noDisplay chosenOptionEmoji"></h4>
         </div>
       </div>
 

@@ -18,6 +18,7 @@ const SingleGame = () => {
           <span>!</span>
         </h1>
       </div>
+      <div class="v-line"></div>
       <div className="user-side">
         <div className="symbols-container">
           <div>

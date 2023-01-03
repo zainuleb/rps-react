@@ -21,7 +21,8 @@ code {
 
 .computer-side {
   margin: 0 auto;
-  width: 60%;
+  width: 48%;
+  border-right: 6px solid rgb(255, 255, 255);
 }
 
 .computer-side:nth-of-type(1) h1 {

@@ -13,7 +13,7 @@ code {
 }
 
 .sg-container {
-  height: 100vh;
+  height: 75vh;
   line-height: 1;
   display: flex;
   justify-content: space-evenly;
@@ -25,7 +25,7 @@ code {
   border-right: 6px solid rgb(255, 255, 255);
 }
 
-.computer-side:nth-of-type(1) h1 {
+.text-container:nth-of-type(1) h1 {
   display: flex;
   justify-content: center;
   font-family: cursive;
@@ -80,7 +80,7 @@ code {
   display: flex;
   justify-content: space-around;
   max-width: 80%;
-  margin: 30px auto;
+  margin: 27px auto;
 }
 
 .gameButton {
@@ -91,4 +91,38 @@ code {
 .gameButton:hover {
   cursor: pointer;
   transform: translate(0, -40px);
+}
+
+.left-emoji,
+.score-container-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-container,
+.symbols-container {
+  min-height: 30vh;
+}
+
+.right-emoji,
+.left-emoji,
+.score-container-left,
+.score-container-right {
+  padding: 20px;
+}
+
+.score-container {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-red {
+  background-color: red;
 }

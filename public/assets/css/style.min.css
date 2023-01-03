@@ -190,7 +190,6 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  color: #fff;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
@@ -288,7 +287,7 @@ body ul {
 }
 
 .about-team {
-  height: 100vh;
+  height: 70vh;
 }
 
 .menu-option:hover {
@@ -1544,11 +1543,11 @@ ul li {
   text-transform: uppercase;
 }
 .padding-top {
-  padding-top: 175px;
+  padding-top: 130px;
 }
 @media (min-width: 992px) {
   .padding-top {
-    padding-top: 175px;
+    padding-top: 140px;
   }
 }
 @media (min-width: 992px) {

@@ -83,10 +83,12 @@ code {
   margin: 30px auto;
 }
 
-.gameButton:hover {
-  cursor: pointer;
-}
-
 .gameButton {
   max-width: 80%;
+  transition: transform 0.3s ease-out;
+}
+
+.gameButton:hover {
+  cursor: pointer;
+  transform: translate(0, -40px);
 }

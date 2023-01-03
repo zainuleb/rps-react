@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import audio from './defeatsound.mp3';
 
 const SingleGame = () => {
   const [userSelection, setUserSelection] = useState('➖');
@@ -37,14 +38,22 @@ const SingleGame = () => {
     }
   };
 
+  const victorySound = new Audio(
+    'https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/audios/correct-choice-43861.mp3'
+  );
+
+  const defeatSound = new Audio(audio);
+
   const userWinFunc = () => {
     setUserScore(() => userScore + 1);
     setUserWin(() => true);
+    victorySound.play();
   };
 
   const compWinFunc = () => {
     setCompScore(() => compScore + 1);
     setUserWin(() => false);
+    defeatSound.play();
   };
 
   const drawFunc = () => {

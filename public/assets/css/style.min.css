@@ -1544,11 +1544,11 @@ ul li {
   text-transform: uppercase;
 }
 .padding-top {
-  padding-top: 75px;
+  padding-top: 175px;
 }
 @media (min-width: 992px) {
   .padding-top {
-    padding-top: 115px;
+    padding-top: 175px;
   }
 }
 @media (min-width: 992px) {

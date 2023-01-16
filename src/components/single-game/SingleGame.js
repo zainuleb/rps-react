@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import audio from './defeatsound.mp3';
 
 const SingleGame = () => {
+  const navigate = useNavigate();
   const [userSelection, setUserSelection] = useState('➖');
   const [compSelection, setCompSelection] = useState('➖');
 
@@ -9,7 +11,6 @@ const SingleGame = () => {
   const [compScore, setCompScore] = useState(0);
 
   const [userWin, setUserWin] = useState();
-  const [isOpen, setIsOpen] = useState(true);
 
   const userSelectionFunction = (param) => {
     setUserSelection(param);
@@ -61,6 +62,7 @@ const SingleGame = () => {
     console.log('Draw');
   };
 
+  const [isOpen, setIsOpen] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -75,6 +77,20 @@ const SingleGame = () => {
     event.preventDefault();
     setIsOpen(false);
   };
+
+  const [finalScoreOpen, setfinalOpen] = useState(false);
+
+  useEffect(() => {
+    if (
+      parseInt(formData.rounds) === userScore ||
+      parseInt(formData.rounds) === compScore
+    ) {
+      setfinalOpen(true);
+      setTimeout(() => {
+        navigate('/');
+      }, 5000);
+    }
+  }, [formData.rounds, userScore, compScore, navigate]);
 
   return (
     <div className="padding-top">
@@ -183,6 +199,21 @@ const SingleGame = () => {
               <br />
               <input className="btn" type="submit" value="Start Game" />
             </form>
+          </div>
+        </div>
+      )}
+      {finalScoreOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2>
+              Winner: {userScore > compScore ? formData.name : 'Computer'}
+            </h2>
+            <br />
+            <br />
+            <br />
+            <h6>
+              Will Redirect to Home Page in <strong>5 Seconds</strong>
+            </h6>
           </div>
         </div>
       )}

@@ -18,7 +18,7 @@ const Header = () => {
               <div className="header-wrapper justify-content-lg-end">
                 <div className="mobile-logo d-lg-none">
                   <Link to="/" className="active">
-                    <img src="assets/images/logo/logo.png" alt="logo" />
+                    <img src="/assets/images/logo.png" alt="logo" />
                   </Link>
                 </div>
                 <div className="menu-area">

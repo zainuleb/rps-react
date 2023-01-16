@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Declaring Page not found component
 const PNF = () => {
   return (
     <section class="fore-zero padding-top padding-bottom">

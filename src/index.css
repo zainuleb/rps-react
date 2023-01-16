@@ -126,3 +126,82 @@ code {
 .bg-red {
   background-color: red;
 }
+
+.modal-overlay {
+  position: fixed; /* position the overlay on top of everything else */
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #081e37;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ffffff33;
+}
+
+.input-form,
+.select-form {
+  display: block;
+  margin: auto auto;
+  width: 60%;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1em;
+}
+.input-form {
+  color: #ffffff;
+}
+.input-form:focus {
+  outline: none;
+}
+
+.input-form::placeholder {
+  color: white;
+}
+
+.select-form {
+  background-color: rgb(205, 203, 203);
+  color: black;
+  font-size: large;
+  font-weight: 500;
+  max-width: 50%;
+  text-align: center;
+}
+
+option {
+  font-size: large;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(108, 10, 10);
+  border: 1px solid darken(rgb(108, 10, 10), 5%);
+  padding: 0.5em 2em;
+  color: white;
+  margin-right: 0.5em;
+  box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-style: oblique;
+}
+
+.btn:hover {
+  background: rgb(201, 0, 0);
+  transition: ease-in-out 0.5s;
+  color: rgb(0, 0, 0);
+}
+.btn:active {
+  background: rgb(108, 10, 10);
+  box-shadow: inset 0px 1px 1px fadeout(rgb(0, 0, 0), 90%);
+}
+.btn:focus {
+  outline: none;
+}

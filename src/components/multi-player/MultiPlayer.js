@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import audio from './defeatsound.mp3';
 
-const SingleGame = () => {
+const MultiPlayer = () => {
   const [userSelection, setUserSelection] = useState('➖');
   const [compSelection, setCompSelection] = useState('➖');
 
@@ -9,7 +9,6 @@ const SingleGame = () => {
   const [compScore, setCompScore] = useState(0);
 
   const [userWin, setUserWin] = useState();
-  const [isOpen, setIsOpen] = useState(true);
 
   const userSelectionFunction = (param) => {
     setUserSelection(param);
@@ -61,21 +60,6 @@ const SingleGame = () => {
     console.log('Draw');
   };
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    rounds: '',
-  });
-
-  const handleChange = (event) => {
-    setFormData({ ...formData, [event.target.name]: event.target.value });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setIsOpen(false);
-  };
-
   return (
     <div className="padding-top">
       <div
@@ -83,7 +67,7 @@ const SingleGame = () => {
         style={{ backgroundColor: userWin === true ? 'green' : 'red' }}
       >
         <h2>Computer</h2>
-        <h2>{formData.name.length > 0 ? formData.name : 'Player'}</h2>
+        <h2>You</h2>
       </div>
       <div className="sg-container">
         <div className="computer-side">
@@ -142,52 +126,8 @@ const SingleGame = () => {
           </div>
         </div>
       </div>
-      {isOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <h2>Add Player Details</h2>
-            <br />
-            <br />
-            <form onSubmit={handleSubmit}>
-              <input
-                className="input-form"
-                placeholder="Name"
-                required
-                type="text"
-                name="name"
-                onChange={handleChange}
-              />
-
-              <input
-                className="input-form"
-                placeholder="Email"
-                required
-                type="email"
-                name="email"
-                onChange={handleChange}
-              />
-
-              <select
-                required
-                className="select-form"
-                name="rounds"
-                onChange={handleChange}
-              >
-                <option value="" disabled selected>
-                  Select Number of Rounds
-                </option>
-                <option value="3">3</option>
-                <option value="7">7</option>
-                <option value="9">9</option>
-              </select>
-              <br />
-              <input className="btn" type="submit" value="Start Game" />
-            </form>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
 
-export default SingleGame;
+export default MultiPlayer;

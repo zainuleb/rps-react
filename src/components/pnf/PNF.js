@@ -1,25 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //Declaring Page not found component
 const PNF = () => {
   return (
-    <section class="fore-zero padding-top padding-bottom">
-      <div class="container">
-        <div class="section-wrapper">
-          <div class="zero-item">
-            <div class="zero-thumb">
+    <section className="fore-zero padding-top padding-bottom">
+      <div className="container">
+        <div className="section-wrapper">
+          <div className="zero-item">
+            <div className="zero-thumb">
               <img src="assets/images/404.png" alt="404" />
             </div>
-            <div class="zero-content">
+            <div className="zero-content">
               <h2>Oops! This Page Not Found</h2>
               <p>
                 We are Really Sorry But the Page you Requested is Missing
-                <i class="icofont-worried"></i>
+                <i className="icofont-worried"></i>
               </p>
-              <a href="index.html" class="default-button reverse-effect">
+              <Link to={'/'} className="default-button reverse-effect">
                 <span>
-                  Go Back to Home <i class="icofont-double-right"></i>
+                  Go Back to Home <i className="icofont-double-right"></i>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

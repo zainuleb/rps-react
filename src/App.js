@@ -21,7 +21,7 @@ function App() {
         {/* Multi game route, renders the MultiPlayer component */}
         <Route path="multi-game" element={<MultiPlayer />} />
         {/* 404 route, renders the PNF component */}
-        <Route path="" element={<PNF />} />
+        <Route path="*" element={<PNF />} />
       </Routes>
       <Footer /> {/* Renders the Footer component */}
     </div>

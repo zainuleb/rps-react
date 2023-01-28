@@ -206,3 +206,7 @@ option {
 .btn:focus {
   outline: none;
 }
+
+.c35 {
+  padding: 10em 2em;
+}

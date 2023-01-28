@@ -18,14 +18,6 @@ const Menu = () => {
               <span className="right">Player vs Computer</span>
             </li>
           </Link>
-          <Link to="multi-game">
-            <li className="menu-option d-flex align-items-center">
-              <span className="left me-3">
-                <i className="icofont-workers-group"></i>
-              </span>
-              <span className="right">Player vs Player</span>
-            </li>
-          </Link>
         </ul>
       </div>
     </div>

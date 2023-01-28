@@ -3,15 +3,21 @@ import { useNavigate } from 'react-router-dom';
 import audio from './defeatsound.mp3';
 
 const SingleGame = () => {
+  // navigating
   const navigate = useNavigate();
+
+  // selections
   const [userSelection, setUserSelection] = useState('➖');
   const [compSelection, setCompSelection] = useState('➖');
 
+  // scores
   const [userScore, setUserScore] = useState(0);
   const [compScore, setCompScore] = useState(0);
 
+  // user win state
   const [userWin, setUserWin] = useState();
 
+  // user selection
   const userSelectionFunction = (param) => {
     setUserSelection(param);
     let randVal = Math.floor(Math.random() * 3);
@@ -40,12 +46,13 @@ const SingleGame = () => {
     }
   };
 
+  // sounds
   const victorySound = new Audio(
     'https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/audios/correct-choice-43861.mp3'
   );
-
   const defeatSound = new Audio(audio);
 
+  // win, lose, draw functions
   const userWinFunc = () => {
     setUserScore(() => userScore + 1);
     setUserWin(() => true);
@@ -62,6 +69,7 @@ const SingleGame = () => {
     console.log('Draw');
   };
 
+  // form state
   const [isOpen, setIsOpen] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
@@ -69,17 +77,22 @@ const SingleGame = () => {
     rounds: '',
   });
 
+  // handle form change
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+  // handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsOpen(false);
   };
-
+  // This line of code creates a state variable called "finalScoreOpen" and a function to update it called "setfinalOpen"
   const [finalScoreOpen, setfinalOpen] = useState(false);
 
+  // This useEffect hook runs when any of the variables in the dependency array change
+  // It checks if the number of rounds specified in the formData is equal to either the userScore or compScore
+  // If it is, it sets finalScoreOpen to true and sets a timeout to navigate back to the homepage after 5 seconds
   useEffect(() => {
     if (
       parseInt(formData.rounds) === userScore ||
@@ -92,18 +105,30 @@ const SingleGame = () => {
     }
   }, [formData.rounds, userScore, compScore, navigate]);
 
+  // This code renders the game board, including the score display, the symbols for the user and computer's choices, and the form modal for adding player details
   return (
     <div className="padding-top">
+      {/*  The outer div has a class "padding-top" */}
+
       <div
         className="score-container"
         style={{ backgroundColor: userWin === true ? 'green' : 'red' }}
       >
+        {/*  The inner div has a class "score-container" and its background color is determined by the value of the variable "userWin" */}
         <h2>Computer</h2>
+        {/*  Display the text "Computer" */}
+
         <h2>{formData.name.length > 0 ? formData.name : 'Player'}</h2>
+        {/*  Display the value of the "name" key in the "formData" object, or if it is empty, display the text "Player" */}
       </div>
+
       <div className="sg-container">
+        {/*  The outer div has a class "sg-container" */}
+
         <div className="computer-side">
+          {/*  The inner div has a class "computer-side" */}
           <div className="text-container">
+            {/*  The inner div has a class "text-container" */}
             <h1>
               <span>L</span>
               <span>E</span>
@@ -116,22 +141,30 @@ const SingleGame = () => {
               <span>A</span>
               <span>Y</span>
             </h1>
+            {/*  Display the text "LET'S PLAY" */}
           </div>
           <div className="left-emoji">
             <h2>{compSelection}</h2>
+            {/*  Display the value of the variable "compSelection" */}
           </div>
           <div className="score-container-left">
             <h2>{compScore}</h2>
+            {/*  Display the value of the variable "compScore" */}
           </div>
         </div>
+
         <div className="user-side">
+          {/*  The inner div has a class "user-side" */}
           <div className="symbols-container">
+            {/*  The inner div has a class "symbols-container" */}
             <div onClick={() => userSelectionFunction('🪨')}>
+              {/*  The inner div has an onClick function that calls the function "userSelectionFunction" with an argument "🪨" */}
               <img
                 className="gameButton rock"
                 src="https://github.com/praxeds/theodinproject-rock-paper-scissors/blob/main/assets/images/raised-fist_270a.png?raw=true"
                 alt="Raised fist"
               />
+              {/*  Display an image with a class "gameButton rock" and a source and alt attributes */}
             </div>
             <div>
               <img

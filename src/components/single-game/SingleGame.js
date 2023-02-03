@@ -1,44 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import audio from './defeatsound.mp3';
+import React, { useState, useEffect } from 'react'; // imported useState and useEffect function from react library
+import { useNavigate } from 'react-router-dom'; // used to give access to the navigation objects
+import audio from './defeatsound.mp3'; // importing the defeat sound audio
 
 const SingleGame = () => {
   // navigating
-  const navigate = useNavigate();
-
-  // selections
-  const [userSelection, setUserSelection] = useState('➖');
-  const [compSelection, setCompSelection] = useState('➖');
-
+  const navigate = useNavigate(); //navigating back to the home page automaticaly after the game ends
+  // selection variables
+  const [userSelection, setUserSelection] = useState('➖'); // getting and setting users choice  .
+  const [compSelection, setCompSelection] = useState('➖'); // getting and setting computers choice
   // scores
-  const [userScore, setUserScore] = useState(0);
-  const [compScore, setCompScore] = useState(0);
+  const [userScore, setUserScore] = useState(0); // getting and setting user score
+  const [compScore, setCompScore] = useState(0); // getting and setting computer score
 
   // user win state
-  const [userWin, setUserWin] = useState();
+  const [userWin, setUserWin] = useState(false); //letting the user know if they win or lose the rounds
 
-  // user selection
+  // user selection fuction
   const userSelectionFunction = (param) => {
-    setUserSelection(param);
-    let randVal = Math.floor(Math.random() * 3);
-    switch (randVal) {
+    // when symblos are clicked they are passed through parameter
+    setUserSelection(param); // changing userselection to param
+    let randomDecimal = Math.random() * 3; // setting a random decimal number that get multiplied by 3
+    let randomInteger = Math.floor(randomDecimal); // get Integer number for easy comparison
+    // generating values among 0,1,2
+    switch (randomInteger) {
       case 0:
-        setCompSelection('🪨');
-        if (param === '📄') userWinFunc();
-        if (param === '✂️') compWinFunc();
-        if (param === '🪨') drawFunc();
+        setCompSelection('🪨'); // shows the computer selection
+        if (param === '📄') userWinFunc(); // user selects paper and wins
+        if (param === '✂️') compWinFunc(); // user selects scissors and losses
+        if (param === '🪨') drawFunc(); // same selection by both will result in a draw
         break;
       case 1:
         setCompSelection('📄');
-        if (param === '✂️') userWinFunc();
-        if (param === '🪨') compWinFunc();
-        if (param === '📄') drawFunc();
+        if (param === '✂️') userWinFunc(); // user selects scissors and wins
+        if (param === '🪨') compWinFunc(); // user selects rock and losses
+        if (param === '📄') drawFunc(); // same selection by both will result in a draw
         break;
       case 2:
         setCompSelection('✂️');
-        if (param === '🪨') userWinFunc();
-        if (param === '📄') compWinFunc();
-        if (param === '✂️') drawFunc();
+        if (param === '🪨') userWinFunc(); // user selects rock and wins
+        if (param === '📄') compWinFunc(); // user selects paer and losses
+        if (param === '✂️') drawFunc(); // same selection by both will result in a draw
         break;
 
       default:

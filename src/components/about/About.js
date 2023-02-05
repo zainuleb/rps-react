@@ -7,17 +7,12 @@ const About = () => {
         <span class="c38">Rock Paper Scissors: </span>
         <span class="c22">Project Overview statement</span>
       </h2>
-      <p class="c35 title" id="h.tojlqlkiad42">
-        <span class="c8 c34">Rock Paper Scissors</span>
-      </p>
       <p class="c2">
         <span class="c36 c17"></span>
       </p>
       <h2 class="c9" id="h.x61jxbainjie">
         <span class="c18 c8">Teammates: </span>
       </h2>
-      <a id="t.a27cd38e14df744a5da8cfe708f220fe76208b13"></a>
-      <a id="t.0"></a>
       <table class="c23">
         <tr class="c14">
           <td class="c25" colspan="1" rowspan="1">
@@ -351,8 +346,7 @@ const About = () => {
       <h2 class="c12" id="h.v0xxkppqawp7">
         <span class="c18 c8">Lessons learned:</span>
       </h2>
-      <a id="t.f2d359590ca91e9b4e57a60134058db837389be0"></a>
-      <a id="t.1"></a>
+
       <table class="c23">
         <tr class="c14">
           <td class="c21" colspan="1" rowspan="1">

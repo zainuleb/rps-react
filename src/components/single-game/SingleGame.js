@@ -241,7 +241,8 @@ const SingleGame = () => {
         <div className="modal-overlay">
           <div className="modal-content">
             <h2>
-              Winner: {userScore > compScore ? formData.name : 'Computer'}
+              Winner Winner Chicken Dinner:{' '}
+              {userScore > compScore ? formData.name : 'Computer'}
             </h2>
             <br />
             <br />

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'; // imported useState and use
 import { useNavigate } from 'react-router-dom'; // used to give access to the navigation objects
 import audio from './defeatsound.mp3'; // importing the defeat sound audio
 
+//Functional Programming
 const SingleGame = () => {
   // navigating
   const navigate = useNavigate(); //navigating back to the home page automaticaly after the game ends
@@ -102,7 +103,7 @@ const SingleGame = () => {
       setfinalOpen(true);
       setTimeout(() => {
         navigate('/');
-      }, 5000);
+      }, 10000);
     }
   }, [formData.rounds, userScore, compScore, navigate]);
 
